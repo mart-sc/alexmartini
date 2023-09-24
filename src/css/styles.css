@@ -1,0 +1,98 @@
+/** 
+ * Media para telas menores,
+ * apropriadas para dispositivos móveis
+**/
+@media (max-width: 912px) {
+   
+    /* Diminui o tamanho das fontes */
+    html, body {
+        font-size: x-small;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav, ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        margin-bottom: 64px;
+    }
+}
+
+/* Media para telas muito grandes */
+@media (min-width: 2200px) {
+   
+    /* Posiciona o footer no fundo da página */
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+body {
+    background-image: linear-gradient(32deg, #354158, #242521, #101723);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Adiciona animações de ampliação ao passar o mouse por cima */
+button, img, p, li {
+    transition: 1s;
+}
+
+button:hover, img:hover, p:hover, li:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+button > a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    gap: 32px;
+}
+
+/** 
+* Posiciona o botão de subir ao topo da página, 
+* de forma a ficar no canto inferior direito 
+*/
+#btn-back-to-top {
+    display: none;
+    bottom: 10px;
+    right: 20px;
+}
+
+::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,.9);
+}
+::-webkit-scrollbar-thumb {
+    background-color: #0cccfc
+    ;
+    border-radius: 16px;
+}
