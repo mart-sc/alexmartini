@@ -1,35 +1,34 @@
 /** 
- * Media para telas menores,
+ * Media query para telas menores,
  * apropriadas para dispositivos móveis
-**/
+ */
 @media (max-width: 912px) {
    
-    /* Diminui o tamanho das fontes */
+    /* Diminui o tamanho das fontes de todo o site */
     html, body {
         font-size: x-small;
     }
     
+    /* Organiza em colunas e alinha o conteúdo de header, divs, navs, ul e sections */
     header {
         display: flex;
         flex-direction: column;
     }
-
     header > div {
         display: flex;
         flex-direction: column;
     }
-
     nav, ul {
         display: flex;
         justify-content: center;
         text-align: center;
     }
-
     section {
         display: flex;
         flex-direction: column;
     }
 
+    /* Adiciona uma margem embaixo de imagens */
     img {
         margin-bottom: 64px;
     }
@@ -47,6 +46,7 @@
     }
 }
 
+/* Adiciona estilos para o fundo da página */
 body {
     background-image: linear-gradient(32deg, #354158, #242521, #101723);
     background-repeat: no-repeat;
@@ -54,28 +54,32 @@ body {
     background-attachment: fixed;
 }
 
-/* Adiciona animações de ampliação ao passar o mouse por cima */
+/* 
+ * Adiciona transições de ampliação ao passar o mouse
+ * por cima de botões, imagens, parágrafos e itens de listas 
+ */
 button, img, p, li {
     transition: 1s;
 }
-
 button:hover, img:hover, p:hover, li:hover{
     transform: scale(1.05);
     transition: 1s;
 }
 
+/* Remove sublinhado de links e define cor branca */
 button > a {
     text-decoration: none;
     color: white;
 }
 
-ul {
+/* Adiciona espaçamento entre itens de listas */
+ol, ul {
     gap: 32px;
 }
 
 /** 
 * Posiciona o botão de subir ao topo da página, 
-* de forma a ficar no canto inferior direito 
+* de forma a ficar no canto inferior direito da página
 */
 #btn-back-to-top {
     display: none;
@@ -83,6 +87,7 @@ ul {
     right: 20px;
 }
 
+/* Estiliza a scrollbar do site */
 ::-webkit-scrollbar {
     display: block;
     width: 5px;

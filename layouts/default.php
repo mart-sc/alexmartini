@@ -1,11 +1,16 @@
+<?php 
+$title = explode('/', $_SERVER['PHP_SELF']);
+$title = $title[array_key_last($title)];
+$title = ucfirst(explode('.', $title)[0]);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alex Martini</title>
+    <title>Alex Martini - <?php echo $title ?> </title>
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 

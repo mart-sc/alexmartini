@@ -1,17 +1,24 @@
-// quando o documento da página carregar
+// Evento a ser executado quando todo conteúdo da página for carregado.
 document.addEventListener("DOMContentLoaded", () => {
-    /** BOTÃO DE IR PARA O TOPO DA PÁGINA */
+    
+    // Botão que é responsável por voltar até o topo da página
     let btnBackToTop = document.getElementById("btn-back-to-top");
 
-        // quando a janela detectar scroll vai cahamar a função de mostrar o botão
-    window.onscroll = () => { scrollFunction() }
+    /**
+    * Evento a ser executado quando for detectada uma modificação no scroll da página
+    * chamando a função scrollFunction() 
+    */
+    window.onscroll = () => { 
+        scrollFunction() 
+    }
 
-        // adiciona evento de clique ao botão
+    // Evento a ser executado quando botão for clicado, chamando a função pageTop()
     btnBackToTop.addEventListener('click', (e)=> {
         pageTop();
     });
 
-        // mostra o botão para voltar pro topo da página
+
+    // Essa função é responsável por exibir/esconder o botão de acordo com a posição do scroll 
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             btnBackToTop.style.display = "block";
@@ -20,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-        // vai para o topo da página ao clicar no botão
+    // Essa função é repsonsável por direcionar a posição do scroll ao topo da página
     function pageTop() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;

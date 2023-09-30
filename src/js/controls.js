@@ -1,12 +1,16 @@
-// quando a pagina carregar
-document.addEventListener('click', (e) => {
+// Evento a ser executado quando todo conteúdo da página for carregado.
+document.addEventListener('DOMContentLoaded', (e) => {
     
- // botão "Voltar"
- let btnBack = document.getElementById('controls-back');
+    // Botão de voltar a página
+    let btnBack = document.getElementById('controls-back');
  
- // Evento para voltar para a página anterior
- btnBack.addEventListener('click', (e) => {
-     window.history.back(-1);
- });
- 
+    // Se o botão for encontrado na página, então evento é adicionado
+    if (btnBack) {
+        // Evento a ser executado quando o botão for clicado
+        btnBack.addEventListener('click', (e) => {
+            console.log('clicou');
+            window.history.back();
+        });
+    }
+
 });
