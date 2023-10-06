@@ -14,7 +14,8 @@
                    
                     <p class="col-md-12 fs-4 p-3 rounded-2 shadow" style="background-color: rgba(0, 0, 0, .3);">
                         "Olá, me chamo Alex Martini e atualmente estou focado em construir minha
-                        carreira na área de desenvolvimento web, meu grande objetivo é trabalhar como programador Full-Stack."
+                        carreira na área de desenvolvimento web, meu grande objetivo é trabalhar como Programador Senior
+                        Full-Stack em uma grande empresa."
                     </p>
                     
                     <button class="btn btn-outline-danger btn-lg w-50 align-self-end" type="button"><i data-feather="arrow-up-right"></i>

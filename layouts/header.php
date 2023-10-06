@@ -41,5 +41,23 @@
                 </ul>
             </div>
         </nav>
+
+        <div id="social-links" class="d-flex gap-3 animate__animated animate__fadeInRight">
+            <span>
+                <a href="https://www.linkedin.com/in/mart-sc/" title="Ir para o meu Linkedin">
+                    <i data-feather="linkedin"></i>
+                </a>
+            </span>
+            <span>
+                <a href="https://www.github.com/mart-sc/" title="Ir para o meu Github">
+                    <i data-feather="github"></i>
+                </a>
+            </span>
+            <span>
+                <a href="https://www.instagram.com/ax_martini/" title="Ir para o meu Instagram">
+                    <i data-feather="instagram"></i>
+                </a>
+            </span>
+        </div>
     </div>
 </header>
