@@ -1,6 +1,6 @@
 <?php include __DIR__ . '/default.php' ?>
 <header class="container-fluid text-light p-5 bg-danger shadow">
-    <div class="container d-flex  align-items-center justify-content-around">
+    <div class="container d-flex align-items-center justify-content-around">
         <h1 class="animate__animated animate__fadeInLeft">
             <span>ALEX MARTINI</span>
         </h1>

@@ -1,7 +1,7 @@
 <?php 
-$title = explode('/', $_SERVER['PHP_SELF']);
-$title = $title[array_key_last($title)];
-$title = ucfirst(explode('.', $title)[0]);
+    $title = explode('/', $_SERVER['PHP_SELF']);
+    $title = $title[array_key_last($title)];
+    $title = ucfirst(explode('.', $title)[0]);
 ?>
 
 <!DOCTYPE html>
